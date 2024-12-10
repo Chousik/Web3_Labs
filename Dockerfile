@@ -7,7 +7,7 @@ ENV POSTGRES_DB=postgres_webapp
 ENV POSTGRES_USER=postgres
 ENV POSTGRES_PASSWORD=postgres
 
-ADD postgresql-42.6.0.jar /usr/local/tomee/lib/
+ADD ojdbc11-23.3.0.23.09.jar /usr/local/tomee/lib/
 
 # Копируем готовый .war файл в TomEE
 COPY build/libs/Web3_TomEE-1.0-SNAPSHOT.war /usr/local/tomee/webapps/

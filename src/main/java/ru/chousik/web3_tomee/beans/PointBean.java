@@ -3,6 +3,7 @@ package ru.chousik.web3_tomee.beans;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.faces.context.FacesContext;
+import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import jakarta.servlet.http.HttpSession;
@@ -22,7 +23,7 @@ import java.util.List;
 @Named("pointBean")
 @Getter
 @Setter
-@SessionScoped
+@ViewScoped
 public class PointBean implements Serializable {
     private double selectedX = 0;
     private double selectedY;
